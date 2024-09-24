@@ -12,16 +12,16 @@ MVC Pattern: The project follows the MVC architectural pattern to separate conce
 ViewModels: Used to manage and validate data for forms and views, especially for game creation and editing.
 *******************************************************************************************************************************************************************************************
                                                         *****************Features:*******************
- **************************************************************************** User and Role Management :***********************************************************************************
+ ******** User and Role Management :
 .Admin, User Roles: GameZone supports role-based access control, allowing for different levels of access. Admins can manage games, add news, and view detailed reports, while regular users .can browse and purchase games.
 .Secure Authentication: ASP.NET Identity manages user authentication with role-based permissions.
-**************************************************************************** Game and Category Management :********************************************************************************
+******** Game and Category Management:
 .CRUD Operations: Administrators can create, read, update, and delete games,and news. Games can be associated with multiple categories and devices.
 .File Upload: Admins can upload cover images for games, ensuring that product pages are visually appealing.
 ******** Shopping Cart
 .Add to Cart: Users can add games to their cart, view a cart summary, and proceed to place an order.
 .Reset Cart: A reset button allows users to clear their cart with a single click.
 Order Management: Orders include details like shipping address, status, and items purchased, ensuring a smooth checkout process.
-********************************************************************************* News Section: *******************************************************************************************
+ ********News Section: 
 .Upcoming Games: The platform includes a news section where admins can add news about upcoming games, including details like the release date, platform, and description.
 .Viewable by All: Regular users can view the upcoming games section, keeping them informed about new releases.
