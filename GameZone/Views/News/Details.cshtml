@@ -1,0 +1,14 @@
+﻿@model GameZone.Models.UpcomingGame
+
+@{
+    ViewData["Title"] = Model.GameName;
+}
+
+<h1>@Model.GameName</h1>
+
+<p>Release Date: @Model.ReleaseDate.ToString("MMMM dd, yyyy")</p>
+<p>@Model.Description</p>
+
+<a href="@Url.Action("Index", "News")">Back to list</a>
+
+

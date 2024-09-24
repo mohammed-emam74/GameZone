@@ -1,0 +1,34 @@
+﻿@model IEnumerable<GameZone.Models.UpcomingGame>
+
+@{
+    ViewData["Title"] = "Upcoming Games";
+}
+
+<h2>Upcoming Games</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Release Date</th>
+            <th>Platform</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var game in Model)
+        {
+            <tr>
+                <td>@game.GameName</td>
+                <td>@game.Description</td>
+                <td>@game.ReleaseDate.ToString("d")</td>
+                <td>@game.Platform</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (User.IsInRole("Admin"))
+{
+    <a asp-action="Add" class="btn btn-primary">Add Upcoming Game</a>
+}

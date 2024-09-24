@@ -1,0 +1,14 @@
+﻿@model GameZone.Models.Order
+@if (Model == null)
+{
+    <p>Order not found.</p>
+    return;
+}
+
+@{
+    ViewData["Title"] = "Order Confirmation";
+}
+
+<h1>Order Confirmation</h1>
+<p>Order ID: @Model.OrderId</p>
+<p>Status: @Model.Status</p>
